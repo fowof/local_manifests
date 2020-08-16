@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="AICP/kernel_sony_msm8974" path="kernel/sony/msm8974" remote="github" revision="p9.0" />
+  <project name="fowof/android_device_sony_togari" path="device/sony/togari" remote="github" revision="twrp" />
+</manifest>
