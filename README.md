@@ -1,4 +1,4 @@
-( forked from 115ek/manifest )
+###### forked from [115ek/manifest](https://github.com/115ek/manifest)
 
 ## How To Build
 
