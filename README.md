@@ -14,9 +14,9 @@ navigate into desired directory
 
 ### download manifest:
 
-    cd .repo
-    git clone https://github.com/fowof/local_manifests -b twrp
-    cd ../
+    curl \
+      -o .repo/manifests/togari.xml \
+      https://github.com/fowof/local_manifests/raw/twrp/manifest.xml
 
 ### sync repo:
 
