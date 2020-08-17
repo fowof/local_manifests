@@ -8,16 +8,18 @@ navigate into desired directory
 
 ### initialize repo:
 
-    repo init \
+    $ repo init \
       -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git \
       -b twrp-9.0
 
 ### download manifest:
-
-    curl \
-      -o .repo/manifests/togari.xml \
-      https://github.com/fowof/local_manifests/raw/twrp/manifest.xml
-
+    
+    $ cd .repo
+    $ git clone  \
+      https://github.com/fowof/local_manifests.git \
+      -b twrp
+    $ cd ../
+    
 ### sync repo:
 
     $ repo sync
