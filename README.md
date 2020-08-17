@@ -8,7 +8,9 @@ navigate into desired directory
 
 ### initialize repo:
 
-    repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
+    repo init \
+      -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git \
+      -b twrp-9.0
 
 ### download manifest:
 
