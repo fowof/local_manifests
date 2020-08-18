@@ -12,14 +12,21 @@ navigate into desired directory
       -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git \
       -b twrp-9.0
 
-### download manifest:
+### download local manifest:
     
     $ cd .repo
     $ git clone  \
       https://github.com/fowof/local_manifests.git \
       -b twrp
     $ cd ../
-    
+
+or
+
+    $ mkdir -p .repo/local_manifests
+    $ curl \
+      -o .repo/local_manifests/twrp_togari.xml \
+      https://github.com/fowof/local_manifests/raw/twrp/manifest.xml
+
 ### sync repo:
 
     $ repo sync
