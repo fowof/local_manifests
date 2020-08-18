@@ -29,9 +29,12 @@ navigate into desired directory
     $ export ALLOW_MISSING_DEPENDENCIES=true
     $ source build/envsetup.sh
 
-get needed patch (this fixes automatic OTA update installation):
+### apply patch:
 
     $ repopick -g https://gerrit.twrp.me 1673 1990
+
+
+This fixes automatic OTA update installation.
 
 ### build:
 
