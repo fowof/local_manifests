@@ -16,7 +16,6 @@
   
   <project name="fowof/android_device_sony_togari" path="device/sony/togari" revision="lineage-17.1">
     <copyfile src="defconfig" dest="kernel/sony/msm8974/arch/arm/configs/lineageos_rhine_togari_row_defconfig" />
-    <copyfile src="phone-xxhdpi-2048-dalvik-heap.mk" dest="frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk" />
   </project>
   
 </manifest>
