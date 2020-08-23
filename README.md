@@ -24,7 +24,7 @@ or
 
     $ mkdir -p .repo/local_manifests
     $ curl \
-      -o .repo/local_manifests/twrp_togari.xml \
+      -Lo .repo/local_manifests/twrp_togari.xml \
       https://github.com/fowof/local_manifests/raw/twrp/manifest.xml
 
 ### sync repo:
