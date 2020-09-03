@@ -17,7 +17,7 @@
 
     $ repo sync
 
-#### build:
+#### build
 
     $ source build/envsetup.sh
     $ brunch togari
