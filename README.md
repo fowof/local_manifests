@@ -19,6 +19,6 @@
 
 #### build
 
-    $ source build/envsetup.sh
+    $ . build/envsetup.sh
     $ brunch togari
     
