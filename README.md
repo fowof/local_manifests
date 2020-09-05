@@ -10,7 +10,7 @@
 
     $ mkdir .repo/local_manifests
     $ curl \
-        -Lo .repo/local_manifests/amami.xml \
+        -Lo .repo/local_manifests/togari.xml \
         https://github.com/fowof/local_manifests/raw/lineage-17.1/manifest.xml
 
 #### sync repo
