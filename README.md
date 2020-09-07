@@ -20,5 +20,12 @@
 #### build
 
     $ . build/envsetup.sh
+    
+then
+    
     $ brunch togari
     
+or
+
+    $ breakfast togari && mka -j<jobs> bacon
+
