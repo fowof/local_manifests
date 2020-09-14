@@ -16,6 +16,8 @@
   <project name="fowof/device_sony_togari" path="device/sony/togari" revision="lineage-17.1">
     <copyfile src="repocopy/kernel/sony/msm8974/arch/arm/configs/lineageos_rhine_togari_row_defconfig" 
               dest="kernel/sony/msm8974/arch/arm/configs/lineageos_rhine_togari_row_defconfig" />
+    <copyfile src="repocopy/kernel/sony/msm8974/arch/arm/boot/dts/msm8974-rhine_togari_row.dtsi" 
+              dest="kernel/sony/msm8974/arch/arm/boot/dts/msm8974-rhine_togari_row.dtsi" />
   </project>
   
 </manifest>
