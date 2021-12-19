@@ -1,7 +1,9 @@
 
 set -e
 
-cd "$(dirname "${BASH_SOURCE:-$0}")"
+DIR="$(dirname "${BASH_SOURCE:-$0}")"
+
+cd "$DIR"
 
 repo init \
   -u https://github.com/LineageOS/android.git \
@@ -12,17 +14,24 @@ git clone \
   https://github.com/lin18-microG/local_manifests.git \
   .repo/local_manifests
 
-patch \
-  .repo/local_manifests/setup_sony.xml \
-  togari.patch
-
 mv \
   manifest.xml \
-  .repo/local_manifests/setup_sony.xml
+  .repo/local_manifests/setup_togari.xml
 
 [ -d .repo/local_manifests/.git ] && rm -rf .repo/local_manifests/.git
 [ -d .git                       ] && rm -rf .git
 [ -f README.md                  ] && rm README.md
 [ -f manifest.xml               ] && rm manifest.xml
-[ -f togari.patch               ] && rm togari.patch
 [ -f "${BASH_SOURCE:-$0}"       ] && rm "${BASH_SOURCE:-$0}"
+
+old="$(basename "$(pwd)")"
+cd ../
+new=lineage-18.1-microG
+suffix=
+while [ -d "$new$suffix" ]
+do
+  suffix="-$(hexdump -vn 3 -e '"%02X"' /dev/urandom)"
+done
+new="$new$suffix"
+mv "$old" "$new"
+cd "$new"
