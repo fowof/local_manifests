@@ -20,7 +20,6 @@ mv \
 
 [ -d .repo/local_manifests/.git ] && rm -rf .repo/local_manifests/.git
 [ -d .git                       ] && rm -rf .git
-[ -f README.md                  ] && rm README.md
 [ -f manifest.xml               ] && rm manifest.xml
 [ -f "${BASH_SOURCE:-$0}"       ] && rm "${BASH_SOURCE:-$0}"
 
