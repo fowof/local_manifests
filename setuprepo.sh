@@ -9,18 +9,18 @@ repo init \
   -u https://github.com/LineageOS/android.git \
   -b lineage-18.1
 
-git clone \
-  -b lineage-18.1 \
-  https://github.com/lin18-microG/local_manifests.git \
-  .repo/local_manifests
+[ -d .repo/local_manifests ] \
+  || mkdir .repo/local_manifests
+
+curl -L \
+  https://raw.githubusercontent.com/lin18-microG/lineage-18.1/updates.xml \
+  -o .repo/local_manifests/updates.xml
 
 mv \
   manifest.xml \
-  .repo/local_manifests/setup_togari.xml
+  .repo/local_manifests/togari.xml
 
-[ -d .repo/local_manifests/.git ] && rm -rf .repo/local_manifests/.git
 [ -d .git                       ] && rm -rf .git
-[ -f manifest.xml               ] && rm manifest.xml
 [ -f "${BASH_SOURCE:-$0}"       ] && rm "${BASH_SOURCE:-$0}"
 
 old="$(basename "$(pwd)")"
