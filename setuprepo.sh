@@ -13,7 +13,7 @@ repo init \
   || mkdir .repo/local_manifests
 
 curl -L \
-  https://raw.githubusercontent.com/lin18-microG/lineage-18.1/updates.xml \
+  https://raw.githubusercontent.com/lin18-microG/local_manifests/lineage-18.1/updates.xml \
   -o .repo/local_manifests/updates.xml
 
 mv \
