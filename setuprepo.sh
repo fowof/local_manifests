@@ -12,6 +12,6 @@ repo init \
 
 mkdir -p .repo/local_manifests
 
-mv \
+cp \
   "$MANIFEST" \
   .repo/local_manifests/togari.xml
