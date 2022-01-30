@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" />
+  <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" />
+
+  <project name="LineageOS/android_hardware_sony_macaddrsetup" path="hardware/sony/macaddrsetup" />
+  <project name="LineageOS/android_hardware_sony_thermanager" path="hardware/sony/thermanager" />
+
+  <project name="sony-togari-dev/proprietary_vendor_sony.git" path="vendor/sony" revision="lineage-18.1" />
+
+  <project name="sony-togari-dev/android_device_sony_common.git" path="device/sony/common" revision="lineage-18.1" />
+  <project name="sony-togari-dev/android_device_sony_msm8974-common.git" path="device/sony/msm8974-common" revision="lineage-18.1" />
+  <project name="sony-togari-dev/android_kernel_sony_msm8974.git" path="kernel/sony/msm8974" revision="lineage-18.1" />
+  <project name="sony-togari-dev/android_device_sony_rhine-common" path="device/sony/rhine-common" revision="lineage-18.1" />
+  <project name="sony-togari-dev/android_device_sony_togari" path="device/sony/togari" revision="lineage-18.1" />
+
+</manifest>
